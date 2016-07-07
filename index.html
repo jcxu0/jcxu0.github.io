@@ -280,6 +280,159 @@
             
               
                 
+                <a class="post-title-link" href="/2016/07/07/CSS笔记之background-clip/" itemprop="url">
+                  CSS笔记之background-clip
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-07-07T11:34:17+08:00" content="2016-07-07">
+              2016-07-07
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/07/07/CSS笔记之background-clip/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/07/07/CSS笔记之background-clip/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="&#x80CC;&#x666F;"><a href="#&#x80CC;&#x666F;" class="headerlink" title="&#x80CC;&#x666F;"></a>&#x80CC;&#x666F;</h1><p>&#x5728;&#x770B;&#x300A;CSS Secrets&#x300B;&#x7B2C;&#x4E00;&#x5F20;&#x900F;&#x660E;&#x6548;&#x679C;&#x7684;&#x65F6;&#x5019;&#x770B;&#x5230;&#x4E86;<code>background-clip</code>&#x7684;&#x4F7F;&#x7528;&#xFF0C;&#x5C31;&#x641C;&#x96C6;&#x4E86;&#x4E00;&#x4E0B;&#x5B83;&#x7684;&#x76F8;&#x5173;&#x7528;&#x6CD5;&#x3002;</p>
+<h1 id="background-clip&#x5C5E;&#x6027;"><a href="#background-clip&#x5C5E;&#x6027;" class="headerlink" title="background-clip&#x5C5E;&#x6027;"></a>background-clip&#x5C5E;&#x6027;</h1><p>&#x8FD9;&#x4E2A;&#x5C5E;&#x6027;&#x89C4;&#x5B9A;&#x4E86;&#x80CC;&#x666F;&#x7684;&#x7ED8;&#x5236;&#x533A;&#x57DF;&#x3002;</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">&#x9ED8;&#x8BA4;&#x503C;</th>
+<th style="text-align:center">border-box</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">&#x7EE7;&#x627F;&#x6027;</td>
+<td style="text-align:center">no</td>
+</tr>
+<tr>
+<td style="text-align:center">&#x7248;&#x672C;</td>
+<td style="text-align:center">CSS3</td>
+</tr>
+<tr>
+<td style="text-align:center">JavaScript&#x8BED;&#x6CD5;</td>
+<td style="text-align:center">object.style.background-cliop=&#x201D;padding_box&#x201D;</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h1 id="&#x8BED;&#x6CD5;"><a href="#&#x8BED;&#x6CD5;" class="headerlink" title="&#x8BED;&#x6CD5;"></a>&#x8BED;&#x6CD5;</h1><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">background-clip: border-box|padding-box|content-box;</div></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">&#x503C;</th>
+<th style="text-align:center">&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">border-box</td>
+<td style="text-align:center">&#x80CC;&#x666F;&#x88AB;&#x88C1;&#x51CF;&#x5230;&#x8FB9;&#x6846;&#x76D2;</td>
+</tr>
+<tr>
+<td style="text-align:center">padding-box</td>
+<td style="text-align:center">&#x80CC;&#x666F;&#x88AB;&#x88C1;&#x526A;&#x5230;&#x5185;&#x8FB9;&#x8DDD;&#x6846;</td>
+</tr>
+<tr>
+<td style="text-align:center">content-box</td>
+<td style="text-align:center">&#x80CC;&#x666F;&#x88AB;&#x88C1;&#x526A;&#x5230;&#x5185;&#x5BB9;&#x6846;</td>
+</tr>
+</tbody>
+</table>
+<h1 id="&#x6548;&#x679C;"><a href="#&#x6548;&#x679C;" class="headerlink" title="&#x6548;&#x679C;"></a>&#x6548;&#x679C;</h1><h2 id="&#x793A;&#x4F8B;&#x4EE3;&#x7801;&#xFF1A;"><a href="#&#x793A;&#x4F8B;&#x4EE3;&#x7801;&#xFF1A;" class="headerlink" title="&#x793A;&#x4F8B;&#x4EE3;&#x7801;&#xFF1A;"></a>&#x793A;&#x4F8B;&#x4EE3;&#x7801;&#xFF1A;</h2><p><code>HTML&#x4EE3;&#x7801;</code><br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span></div><div class="line">Can I haz semi-transparent borders?</div><div class="line">Pretty please?</div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure></p>
+<p><code>CSS&#x4EE3;&#x7801;</code><br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">body</span> {</div><div class="line">    <span class="attribute">background</span>: <span class="built_in">url</span>(<span class="string">&apos;http://csssecrets.io/images/stone-art.jpg&apos;</span>);</div><div class="line">}</div><div class="line"></div><div class="line"><span class="selector-tag">div</span> {</div><div class="line">    <span class="attribute">border</span>: <span class="number">10px</span> solid <span class="built_in">hsla</span>(0,0%,100%,.5);</div><div class="line">    <span class="attribute">background</span>: white;</div><div class="line">    <span class="attribute">background-clip</span>: content-box;</div><div class="line">    </div><div class="line">    <span class="comment">/* styling */</span></div><div class="line">    <span class="attribute">max-width</span>: <span class="number">20em</span>;</div><div class="line">    <span class="attribute">padding</span>: <span class="number">2em</span>;</div><div class="line">    <span class="attribute">margin</span>: <span class="number">2em</span> auto <span class="number">0</span>;</div><div class="line">    <span class="attribute">font</span>: <span class="number">100%</span>/<span class="number">1.5</span> sans-serif;</div><div class="line">}</div></pre></td></tr></table></figure></p>
+<h2 id="padding-box"><a href="#padding-box" class="headerlink" title="padding-box"></a>padding-box</h2><p><img src="http://i1.piimg.com/568561/cfbca45fdb6a7728.png" alt="padding-box"></p>
+<h2 id="border-box"><a href="#border-box" class="headerlink" title="border-box"></a>border-box</h2><p><img src="http://i1.piimg.com/568561/5868cd12d372dc1e.png" alt="border-box"></p>
+<h2 id="content-box"><a href="#content-box" class="headerlink" title="content-box"></a>content-box</h2><p><img src="http://i1.piimg.com/568561/88d324cc6c6ce437.png" alt="content-border"></p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/07/07/CSS笔记之颜色/" itemprop="url">
                   CSS笔记之颜色
                 </a>
@@ -772,7 +925,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">4</span>
+              <span class="site-state-item-count">5</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
